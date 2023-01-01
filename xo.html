@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Tic-Tac-Toe</title>
+   <link rel="stylesheet" href="./xo.css" type="text/css">
+</head>
+<body onload="UpdateScores();">
+   <h1 id="bigTitle">Welcome to Tic-Tac-Toe! Enjoy the challenge</h1>
+   <div id="buttons"> 
+      <button id="play" onclick="start(0)">Start Game</button>
+      <button id="next" onclick="Next()">New Round</button>
+   </div>
+   <br>
+   <div id="scoreBoard">
+      <h1>Score_Board</h1>
+      <table id="scores">
+         <tr>
+            <td>Player X:</td>
+            <th id="X"></th>
+         </tr><tr>
+            <td>Player O:</td>
+            <th id="O"></th>
+         </tr><tr>
+            <td>Draws:</td>
+            <th id="D"></th>
+         </tr><tr>
+            <td class="turn">Player Turn: </td>
+            <th id="T"></th>
+         </tr>
+      </table>
+   </div>
+   <div id="container">
+      <button id="square1" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+      <button id="square2" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+      <button id="square3" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+      <button id="square4" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+      <button id="square5" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+      <button id="square6" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+      <button id="square7" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+      <button id="square8" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+      <button id="square9" onclick = "PlayOneTurn(current_Symbol, this)" disabled></button>
+   </div>
+<script src="./xo.js"></script>
+</body>
+</html>

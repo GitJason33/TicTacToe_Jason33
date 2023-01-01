@@ -1,0 +1,62 @@
+body{ 
+   background-color:black; 
+   text-align: center;
+}
+#entryText{
+   color:yellow;
+   font-weight: bold;
+   font-family: "Courier New";
+}
+/* title */
+h1{ color: red; }
+#container{ height: 495px; }
+#buttons{ justify-content: space-around; }
+#container, #buttons{
+   width: 495px;
+   display: flex;
+   flex-flow: row wrap;
+   margin: auto;
+}
+/* squares design */
+#container button{
+   display: block;
+   background-color:rgb(0,255,20);
+   border: 1px solid black;
+   width: 165px; 
+   height: 165px;
+   padding: 0px;
+   margin: 0px;
+}
+/* round corners */
+#square1{ border-top-left-radius: 20%;    }
+#square3{ border-top-right-radius: 20%;   }
+#square7{ border-bottom-left-radius: 20%; }
+#square9{ border-bottom-right-radius: 20%;}
+/* bottom button */
+#next, #play{ 
+   font-size: 150%;
+   font-weight: bold;
+   color: blue;
+   background-color: cyan;
+   border: 2px dashed purple;
+   font-family:'Courier New';
+}
+#scoreBoard{
+   color: white;
+   position: fixed;
+   text-align: left;
+}
+table{
+   border-collapse: collapse;
+}
+tr{ font-size: 150%; }
+#O, #X, #D{ color: fuchsia; }
+.turn{
+   color: seagreen;
+   font-weight: bold;
+}
+#T{ color: white; }
+td, th{ 
+   color: teal;
+   border: 1px solid gray;
+}
